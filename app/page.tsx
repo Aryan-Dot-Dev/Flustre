@@ -14,7 +14,7 @@ export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const mouseRef = useRef({ x: 0, y: 0 });
   const [smoothMousePos, setSmoothMousePos] = useState({ x: 0, y: 0 });
-  const rafRef = useRef<number>();
+  const rafRef = useRef<number | null>(null);
   const router = useRouter();
   const [portalActive, setPortalActive] = useState(false);
   const [portalOrigin, setPortalOrigin] = useState({ x: 0, y: 0 });
